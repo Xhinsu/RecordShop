@@ -1,2 +1,2 @@
-package com.northcoders.example.RecordShop.model;public enum Genre {
+package com.northcoders.example.RecordShop.model;public class Genre {
 }
