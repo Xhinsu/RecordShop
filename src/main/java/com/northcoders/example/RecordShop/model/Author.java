@@ -12,6 +12,7 @@ import lombok.NoArgsConstructor;
 import java.util.Date;
 import java.util.List;
 
+
 @Entity
 @Data
 @AllArgsConstructor
@@ -25,7 +26,7 @@ public class Author {
     private long id;
     private String firstName;
     private String longName;
-    private Date dateOfBirth;
+//    private Date dateOfBirth;
 //    private List<Album> albumList;
 
 }

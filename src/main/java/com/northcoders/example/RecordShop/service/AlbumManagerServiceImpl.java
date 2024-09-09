@@ -17,11 +17,11 @@ public class AlbumManagerServiceImpl implements AlbumManagerService {
     @Override
     public List<Album> getAllAlbums() {
         List<Album> albums = new ArrayList<>();
-        try{
+//        try{
             albumManagerRepository.findAll().forEach(albums::add);
-        }catch(NullPointerException e){
-            System.err.println("Computer says no..");
-        }
+//        }catch(NullPointerException e){
+//            System.err.println("Computer says no..");
+//        }
         return albums;
     }
 
