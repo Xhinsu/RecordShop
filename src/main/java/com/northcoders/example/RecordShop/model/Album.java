@@ -6,22 +6,24 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Table(name = "albums")
 public class Album {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
-    @Column(name ="firstName")
+    @Column(name = "album_Id")
+    private Long id;
     private String name;
     private String artist;
-//    private Genre genre;
-//    private int inStock;
-//    private Date releaseYear;
+
+    @OneToMany(mappedBy = "album")
+    private List<Genre> genres;
+
 }
