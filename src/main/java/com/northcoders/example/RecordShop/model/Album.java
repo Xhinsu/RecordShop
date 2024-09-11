@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Entity
@@ -18,10 +20,8 @@ public class Album {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    @Column(name ="firstName")
     private String name;
     private String artist;
-//    private Genre genre;
-//    private int inStock;
-//    private Date releaseYear;
+    private String genre;
+    private LocalDate releaseYear;
 }
