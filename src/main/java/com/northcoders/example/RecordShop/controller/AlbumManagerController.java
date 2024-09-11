@@ -24,8 +24,8 @@ public class AlbumManagerController {
     }
 
     @PatchMapping("/album/{id}")
-    public Album patchAlbumById(@PathVariable long id){
-        return  albumManagerService.updateAlbumById(id);
+    public Album patchAlbumById(@RequestBody Album album, @PathVariable long id){
+        return  albumManagerService.updateAlbum(album,id);
     }
 
     @GetMapping("/album/info/{album}")

@@ -13,7 +13,7 @@ public interface AlbumManagerService {
     Album getAlbumById(long id);
     Album saveAlbum(Album album);
     String getAllGenre();
-    Album updateAlbumById(long id);
+    Album updateAlbum(Album album, long id);
 
     List<Album> getAlbumByGenre(String genre);
     List<Album>getAlbumByArtist(String artist);
